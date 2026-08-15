@@ -1,0 +1,1 @@
+deployment/module1/models/efficientnetv2s_best.pt filter=lfs diff=lfs merge=lfs -text

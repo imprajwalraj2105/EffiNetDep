@@ -1,0 +1,14 @@
+module0:
+  model_name: EfficientNet-B0
+  version: module0_v1
+  checkpoint: models/efficientnet_b0_best.pt
+  brain_mri_threshold: 0.995301365852356
+  threshold_source: validation_split
+  selected_epoch: 1
+class_to_idx:
+  non_brain_mri: 0
+  brain_mri: 1
+display_names:
+  non_brain_mri: Non-Brain MRI
+  brain_mri: Brain MRI
+image_size: 224

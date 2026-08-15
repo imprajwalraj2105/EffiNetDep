@@ -1,0 +1,25 @@
+model:
+  name: efficientnet_v2_s
+  display_name: EfficientNetV2-S
+  version: module1_v1
+  num_classes: 4
+
+classes:
+  0: Glioma
+  1: Meningioma
+  2: No Tumor
+  3: Pituitary
+
+input:
+  image_size: 224
+  channels: 3
+  color_mode: RGB
+
+preprocessing:
+  use_test_transforms: true
+  enable_margin_removal: false
+  enable_skull_stripping: false
+  enable_n4: false
+
+deployment:
+  checkpoint: models/efficientnetv2s_best.pt
